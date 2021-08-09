@@ -23,7 +23,6 @@ public with sharing class AssignTasks {
                 }
             }
         }
-
         update listTasks;
     }
 }
