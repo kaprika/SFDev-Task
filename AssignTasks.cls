@@ -6,7 +6,6 @@ public with sharing class AssignTasks {
 
     @InvocableMethod ( label = 'Assign Tasks')
     public static void assignTasks(List<Id> accountId) {
-
         List<Task> listTasks = new List<Task>();
 
         List<Account> accounts = [SELECT Id, (SELECT Id FROM Tasks) FROM Account];
